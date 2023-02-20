@@ -21,3 +21,5 @@ requests==2.28.1
 django-extensions
 pyparsing
 pydot
+
+#estas es para el entorno virtual

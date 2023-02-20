@@ -39,8 +39,12 @@ Plantilla Inicial Docker, python 3.10 y Django 4.
 ## Levantar servicio Django dentro de entorno virtual venv
         cd django-backend/
         set -a; source ../.env; set +a
+        python manage.py makemigrations
+        python manage.py migrate
+        python manage.py createsuperuser 
         python manage.py runserver 0.0.0.0:8001
         Abrir navegador: http://localhost:8001/
+        
 
 ## Levantar servicio Django dentro de entorno virtual venv, con comando Make
         Make runserver
